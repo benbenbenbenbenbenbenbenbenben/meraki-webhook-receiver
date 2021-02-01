@@ -2,10 +2,18 @@
 Receive Webhooks from Meraki and Webex Teams. Post to Webex Room.
 
 ## Setup
+
+### Setup Webex Bot
+- [Webex Teams Bot Guide](https://github.com/benbenbenbenbenbenbenbenbenben/webex-teams-bot-guide)
+
+### Setup Meraki Webhooks
+- [Meraki Webooks](https://developer.cisco.com/meraki/webhooks/)
+
+### Setup Receiver
 1. Clone Github Repository
 ```bash
-git clone https://github.com/
-cd folder
+git clone https://github.com/benbenbenbenbenbenbenbenbenben/meraki-webhook-receiver.git
+cd meraki-webhook-receiver
 ```
 2. Now "activate" the python virtual environment
 ```bash
@@ -24,10 +32,9 @@ export WEBEX_SECRET=
 export MERAKI_SECRET=
 export WEBEX_ROOM=
 ```
-5. Run App
+5. Run The App
 ```bash
 python app.py
 ```
 
-## Further Reading
-- [Webex Teams Bot Guide](https://github.com/benbenbenbenbenbenbenbenbenben/webex-teams-bot-guide)
+

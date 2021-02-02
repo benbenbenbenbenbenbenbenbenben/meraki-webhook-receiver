@@ -12,3 +12,6 @@ def message_print(title, message = 'No Message Details'):
     timestamp = datetime.datetime.now()
     print(f'{colors.OKBLUE}<---{timestamp}----{title}------------------------->{colors.ENDC}')
     print(message)
+
+def alert(title):
+    print(f'{colors.FAIL}<-------------------------{title}------------------------->{colors.ENDC}')

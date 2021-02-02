@@ -1,8 +1,10 @@
 import datetime
 
+#----------------------------------------------------------------------------#
 # Meraki Webhook handler function
+#----------------------------------------------------------------------------#
+
 def handler(webhook):
-    print(webhook)
 
     # Dashboard Webhook Test
     if not bool(webhook["alertData"]):

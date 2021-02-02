@@ -59,7 +59,7 @@ source venv/bin/activate
 ```
 3. Install project requirements
 ```bash
-pip install Flask
+pip install Flask requests
 ```
 4. Export Env Variables
 ```bash
@@ -77,5 +77,8 @@ export WEBEX_ROOM=
 ```bash
 python app.py
 ```
+
+## Test
+Send a test webhook from Network-wide > Alerts Page or using the new Environmental > Alert Profiles test buttons. 
 
 

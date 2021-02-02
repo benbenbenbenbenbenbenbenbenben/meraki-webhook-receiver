@@ -81,4 +81,15 @@ python app.py
 ## Test
 Send a test webhook from Network-wide > Alerts Page or using the new Environmental > Alert Profiles test buttons. 
 
+## Customise
+Edit **meraki_events.py** to have your own custom messages.
+```python
+# Door Sensor Open
+if webhook['deviceModel'] == 'MT20' and webhook["alertData"]["triggerData"][0]["trigger"]["sensorValue"] == 1.0:
+    message = f'**Door Opened** 🚪🏃\
+                \n- **Network:** {webhook["networkName"]}\
+                \n- **Sensor:** {webhook["deviceName"]}\
+                \n- **Time:** {time_format(ts)}'
+    return message
+```
 
